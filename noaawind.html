@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPC Day 1 Wind Outlook</title>
+<style>
+
+    body { margin: 0; padding: 0; text-align: center; background-color: #f0f0f0; }
+
+    img { width: 550px; height: 413px; }
+</style>
+</head>
+<body>
+<h3>SPC Day 1 Wind Outlook</h3>
+<img id="noaa-img" alt="NOAA Outlook">
+<script>
+
+    const baseUrl = "https://www.spc.noaa.gov/partners/outlooks/cwa/images/DTX_swody1_TORN.png";
+
+    const timestamp = new Date().getTime();
+
+    document.getElementById("noaa-img").src = baseUrl + "?t=" + timestamp;
+</script>
+</body>
+</html>
+ 
