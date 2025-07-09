@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SPC Day 2 Precipitation</title>
+<style>
+
+    body { margin: 0; padding: 0; text-align: center; background-color: #f0f0f0; }
+
+    img { width: 550px; height: 413px; }
+</style>
+</head>
+<body>
+<h3>SPC Day 2 Precipitation</h3>
+<img id="noaa-img" alt="NOAA Outlook">
+<script>
+
+    const baseUrl = "https://www.wpc.ncep.noaa.gov/qpf/fill_98qwbg.gif";
+
+    const timestamp = new Date().getTime();
+
+    document.getElementById("noaa-img").src = baseUrl + "?t=" + timestamp;
+</script>
+</body>
+</html>
+ 
